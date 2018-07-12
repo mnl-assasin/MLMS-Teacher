@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MLMS Teacher</string>
+
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="username">Username</string>
+    <string name="birthday">Birthday</string>
+    <string name="password">Password</string>
+
+    <string name="sign_in">Sign in</string>
+    <string name="no_account">No account yet?</string>
+    <string name="sign_up_here">Sign up here</string>
+
+    <string name="sign_up">Sign up</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="sign_in_here">Sign in here</string>
+
+    <string name="module_attendance">Check attendance</string>
+    <string name="module_quiz">Manage Quiz</string>
+    <string name="module_lesson">Lesson Plan</string>
+    <string name="module_report">View class record</string>
+    <string name="click_restore">Restore</string>
+    <string name="click_backup">Backup</string>
+
+
+</resources>
