@@ -5,168 +5,36 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="74ade13a-0fba-4336-955b-daa405b9d4ab" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/bin/arm64-v8a/copy-libnode.so-here" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/bin/arm64-v8a/libnode.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/bin/armeabi-v7a/copy-libnode.so-here" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/bin/armeabi-v7a/libnode.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/bin/x86/copy-libnode.so-here" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/bin/x86/libnode.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/bin/x86_64/copy-libnode.so-here" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/bin/x86_64/libnode.so" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/android-ifaddrs.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/chakra_ttd.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/common.gypi" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/config.gypi" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/libplatform/libplatform-export.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/libplatform/libplatform.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/libplatform/v8-tracing.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/node.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/node_api.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/node_api_types.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/node_buffer.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/node_object_wrap.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/node_version.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/aes.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/BSD-x86/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/BSD-x86_64/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/VC-WIN32/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/VC-WIN64A/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/aix-gcc/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/aix64-gcc/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/darwin-i386-cc/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/darwin64-x86_64-cc/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/linux-aarch64/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/linux-armv4/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/linux-elf/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/linux-ppc/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/linux-ppc64/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/linux-x32/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/linux-x86_64/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/linux32-s390x/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/linux64-s390x/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/solaris-x86-gcc/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/archs/solaris64-x86_64-gcc/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/asn1.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/asn1_mac.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/asn1t.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/bio.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/blowfish.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/bn.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/buffer.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/camellia.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/cast.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/cmac.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/cms.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/comp.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/conf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/conf_api.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/crypto.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/des.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/des_old.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/dh.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/dsa.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/dso.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/dtls1.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/e_os2.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ebcdic.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ec.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ecdh.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ecdsa.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/engine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/err.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/evp.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/hmac.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/idea.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/krb5_asn.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/kssl.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/lhash.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/md4.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/md5.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/mdc2.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/modes.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/obj_mac.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/objects.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ocsp.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/opensslconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/opensslv.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ossl_typ.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/pem.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/pem2.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/pkcs12.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/pkcs7.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/pqueue.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/rand.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/rc2.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/rc4.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ripemd.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/rsa.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/safestack.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/seed.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/sha.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/srp.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/srtp.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ssl.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ssl2.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ssl23.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ssl3.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/stack.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/symhacks.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/tls1.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ts.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/txt_db.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ui.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/ui_compat.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/whrlpool.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/x509.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/x509_vfy.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/openssl/x509v3.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/pthread-barrier.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/stdint-msvc2008.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/tree.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv-aix.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv-bsd.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv-darwin.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv-errno.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv-linux.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv-os390.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv-posix.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv-sunos.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv-threadpool.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv-unix.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv-version.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv-win.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/uv.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/v8-debug.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/v8-inspector-protocol.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/v8-inspector.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/v8-platform.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/v8-profiler.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/v8-testing.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/v8-util.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/v8-value-serializer-version.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/v8-version-string.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/v8-version.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/v8.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/v8config.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/zconf.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/libnode/include/node/zlib.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/cpp/native-lib.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/NodeJSServer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/data/EZSharedPreferences.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/CMakeLists.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/Test2Activity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/TestActivity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/data/DummyData.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_test.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_test2.xml" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" afterPath="$PROJECT_DIR$/app/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/data/Keys.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/data/Keys.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/util/Util.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/util/Util.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/NodeJSServer.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/NodeJSServer.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/QuizCreatorActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/QuizCreatorActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/SplashscreenActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/SplashscreenActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/adapter/QuizQuestionAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/adapter/QuizQuestionAdapter.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/model/Quiz.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/model/Quiz.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/model/QuizQuestion.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/model/QuizQuestion.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -190,82 +58,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="colors.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="native-lib.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/cpp/native-lib.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NodeJSServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/NodeJSServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-550">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Util.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/util/Util.java">
+      <file leaf-file-name="TestActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/TestActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuizQuestion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/model/QuizQuestion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SplashscreenActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/SplashscreenActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test2Activity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/Test2Activity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="26" column="101" lean-forward="false" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="101" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Quiz.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/model/Quiz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#574#575#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EZSharedPreferences.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/data/EZSharedPreferences.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Number</find>
+      <find>long</find>
+      <find>No</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>int</replace>
+      <replace>Id</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -433,10 +321,6 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileReleaseNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="generateDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -511,6 +395,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileDebugUnitTestJavaWithJavac" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateJsonModelRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -677,6 +565,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateJsonModelDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="preparePUBLISHED_DEXDebugAndroidTestForPublishing" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -775,10 +667,6 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugAndroidTestNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileDebugUnitTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -800,6 +688,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="extractProguardFiles" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="externalNativeBuildCleanDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -837,10 +729,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="transformNativeLibsWithStripDebugSymbolForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -973,6 +861,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="externalNativeBuildDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="generateReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1000,6 +892,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="externalNativeBuildCleanRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="mergeDebugAndroidTestShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1013,6 +909,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="preDebugBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="externalNativeBuildRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1189,10 +1089,6 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="compileReleaseNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1267,6 +1163,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugUnitTestJavaWithJavac" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateJsonModelRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1433,6 +1333,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="generateJsonModelDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="preparePUBLISHED_DEXDebugAndroidTestForPublishing" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1526,10 +1430,6 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="compileDebugAndroidTestNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugUnitTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1551,6 +1451,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="extractProguardFiles" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="externalNativeBuildCleanDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1588,10 +1492,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformNativeLibsWithStripDebugSymbolForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="compileDebugNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1724,6 +1624,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="externalNativeBuildDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1751,6 +1655,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="externalNativeBuildCleanRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeDebugAndroidTestShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1765,6 +1673,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="preDebugBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="externalNativeBuildRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -2303,23 +2215,32 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/data/Keys.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/util/Util.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/data/EZSharedPreferences.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/NodeJSServer.java" />
         <option value="$PROJECT_DIR$/app/src/main/cpp/native-lib.cpp" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/adapter/QuizQuestionAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/QuizCreatorActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/NodeJSServer.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/data/DummyData.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/model/Quiz.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/Test2Activity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/SplashscreenActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/model/QuizQuestion.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/TestActivity.java" />
+        <option value="$PROJECT_DIR$/app/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1641" />
-    <option name="y" value="172" />
-    <option name="width" value="1280" />
-    <option name="height" value="719" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="-1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -2339,7 +2260,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2352,34 +2275,24 @@
               <item name="MLMS-Teacher-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="MLMS-Teacher-Android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLMS-Teacher-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MLMS-Teacher-Android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLMS-Teacher-Android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="androidmanife&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/AndroidManifest.xml&#10;build.gradle&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/build.gradle&#10;login.xml&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/res/layout/activity_login.xml&#10;styles.xml&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/res/values/styles.xml&#10;colors.xml&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/res/values/colors.xml" />
+    <property name="SearchEverywhereHistoryKey" value="strings.xml&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/res/values/strings.xml&#10;quiz&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/java/com/jru/mlmsteacher/model/QuizQuestion.java&#10;splas&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/java/com/jru/mlmsteacher/SplashscreenActivity.java&#10;testac&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/java/com/jru/mlmsteacher/TestActivity.java&#10;build.gradle&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/build.gradle&#10;main.xml&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/res/layout/activity_main.xml&#10;signup.xml&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/res/layout/activity_signup.xml&#10;login&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/res/layout/activity_login.xml&#10;Splas&#9;PSI&#9;JAVA://com.jru.mlmsteacher.SplashscreenActivity&#10;androidmanife&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/AndroidManifest.xml&#10;login.xml&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/res/layout/activity_login.xml&#10;styles.xml&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/res/values/styles.xml&#10;colors.xml&#9;FILE&#9;file:///Users/mykelneds/Documents/Projects/MobileLMS/MLMS-Teacher-Android/app/src/main/res/values/colors.xml" />
+    <property name="device.picker.selection" value="9886274437565a4c59" />
+    <property name="android.profiler.active" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="com.jru.mlmsteacher" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jru.mlmsteacher.data" />
       <recent name="com.jru.mlmsteacher" />
@@ -2426,7 +2339,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -2438,7 +2351,7 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
       <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -2570,31 +2483,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1641" y="172" width="1280" height="719" extended-state="0" />
+    <frame x="-1920" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32723576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18903089" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17378049" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TestFairy" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.327787" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14323749" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TestFairy" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android WiFi ADB" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2602,7 +2517,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2614,6 +2528,93 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="41" lean-forward="false" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+          <folding>
+            <marker date="1532178351000" expanded="false" signature="2295:2313" ph="&quot;Birthday&quot;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_signup.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/native-lib.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/NodeJSServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/util/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/data/EZSharedPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -2674,7 +2675,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2728,21 +2731,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="59" column="56" lean-forward="false" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/data/Keys.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/mobile-lms/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2754,6 +2764,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/native-lib.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/util/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/data/EZSharedPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2762,49 +2790,190 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_test.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/NodeJSServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-550">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/cpp/native-lib.cpp">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="-52">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_signup.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="61" column="41" lean-forward="false" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+          <folding>
+            <marker date="1532178351000" expanded="false" signature="2295:2313" ph="&quot;Birthday&quot;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/QuizCreatorActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="129" column="74" lean-forward="false" selection-start-line="129" selection-start-column="74" selection-end-line="129" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="301">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/os/Parcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        <state relative-caret-position="211">
+          <caret line="2138" column="0" lean-forward="false" selection-start-line="2138" selection-start-column="0" selection-end-line="2138" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/NodeJSServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="108" column="9" lean-forward="false" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/adapter/QuizQuestionAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_test2.xml">
+      <provider editor-type-id="android-designer2">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/data/DummyData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/model/Quiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/TestActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/model/QuizQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/SplashscreenActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/jru/mlmsteacher/Test2Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="26" column="101" lean-forward="false" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

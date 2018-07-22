@@ -28,8 +28,8 @@ public class NodeJSServer {
 
     private static boolean _startedNodeAlready = false;
 
-    private final static String NODE_JS_PROJECT = "dapper-wallet-nodejs";
-    private final static String APP = "app.js";
+    private final static String NODE_JS_PROJECT = "mobile-lms";
+    private final static String APP = "index.js";
 
     private static String getNodeDirectory(Context ctx) {
         return ctx.getFilesDir().getAbsolutePath() + "/" + NODE_JS_PROJECT;

@@ -1,2 +1,5 @@
 .gradle/
 .idea/
+/.externalNativeBuild
+/.gradle
+/.idea

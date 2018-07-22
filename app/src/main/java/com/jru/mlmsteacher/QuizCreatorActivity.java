@@ -127,7 +127,7 @@ public class QuizCreatorActivity extends AppCompatActivity {
         String optionC = etOptionC.getText().toString();
         String optionD = etOptionD.getText().toString();
         int answer = Integer.parseInt(etCorrectAnswer.getText().toString());
-        long timeLimit = Long.parseLong(etTimeLimit.getText().toString()) * 1000;
+        int timeLimit = Integer.parseInt(etTimeLimit.getText().toString());
 
         // TODO: Add validation
 

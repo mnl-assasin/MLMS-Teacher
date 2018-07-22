@@ -35,7 +35,7 @@ public class QuizQuestionAdapter extends RecyclerView.Adapter<QuizQuestionAdapte
 
         QuizQuestion question = list.get(position);
 
-        holder.tvQuestionNumber.setText("Question #" + (question.getQuestionNumber() + 1));
+        holder.tvQuestionNumber.setText("Question #" + (question.getQuestionId() + 1));
         holder.tvQuestion.setText(question.getQuestion());
 
         holder.tvOptionA.setText(question.getOptionA());

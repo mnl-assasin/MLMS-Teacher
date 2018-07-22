@@ -5,18 +5,18 @@ import android.os.Parcelable;
 
 public class QuizQuestion implements Parcelable {
 
-    private int questionNumber;
+    private int questionId;
     private String question;
     private String optionA;
     private String optionB;
     private String optionC;
     private String optionD;
     private int answer;
-    private long timeLimit; // in millis;
+    private int timeLimit; // in seconds
 
-    public QuizQuestion(int questionNumber, String question, String optionA, String optionB,
-                        String optionC, String optionD, int answer, long timeLimit) {
-        this.questionNumber = questionNumber;
+    public QuizQuestion(int questionId, String question, String optionA, String optionB,
+                        String optionC, String optionD, int answer, int timeLimit) {
+        this.questionId = questionId;
         this.question = question;
         this.optionA = optionA;
         this.optionB = optionB;
@@ -27,14 +27,14 @@ public class QuizQuestion implements Parcelable {
     }
 
     protected QuizQuestion(Parcel in) {
-        questionNumber = in.readInt();
+        questionId = in.readInt();
         question = in.readString();
         optionA = in.readString();
         optionB = in.readString();
         optionC = in.readString();
         optionD = in.readString();
         answer = in.readInt();
-        timeLimit = in.readLong();
+        timeLimit = in.readInt();
     }
 
     public static final Creator<QuizQuestion> CREATOR = new Creator<QuizQuestion>() {
@@ -49,8 +49,8 @@ public class QuizQuestion implements Parcelable {
         }
     };
 
-    public int getQuestionNumber() {
-        return questionNumber;
+    public int getQuestionId() {
+        return questionId;
     }
 
     public String getQuestion() {
@@ -77,7 +77,7 @@ public class QuizQuestion implements Parcelable {
         return answer;
     }
 
-    public long getTimeLimit() {
+    public int getTimeLimit() {
         return timeLimit;
     }
 
@@ -88,13 +88,13 @@ public class QuizQuestion implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(questionNumber);
+        dest.writeInt(questionId);
         dest.writeString(question);
         dest.writeString(optionA);
         dest.writeString(optionB);
         dest.writeString(optionC);
         dest.writeString(optionD);
         dest.writeInt(answer);
-        dest.writeLong(timeLimit);
+        dest.writeInt(timeLimit);
     }
 }
