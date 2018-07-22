@@ -17,9 +17,9 @@ public class TestActivity extends AppCompatActivity {
         Quiz quiz = DummyData.getQuiz();
 
         Bundle extras = new Bundle();
-        extras.putParcelableArrayList("Questions",  quiz.getQuestions());
+//        extras.putParcelableArrayList("Questions",  quiz.getQuestions());
 //        extras.putParcelableArrayList("Questions", quiz.getQuestions());
-//        extras.putParcelable("QUIZ", quiz);
+        extras.putParcelable("QUIZ", quiz);
         Intent intent = new Intent(this, Test2Activity.class).putExtras(extras);
         startActivity(intent);
     }

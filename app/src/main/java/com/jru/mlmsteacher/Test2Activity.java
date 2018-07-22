@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.jru.mlmsteacher.model.Quiz;
 import com.jru.mlmsteacher.model.QuizQuestion;
 
 import java.util.ArrayList;
@@ -17,14 +18,15 @@ public class Test2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test2);
 
-//        Quiz quiz = getIntent().getExtras().getParcelable("QUIZ");
-//        String title = quiz.getTitle();
-//        int numOfQuestion = quiz.getNumOfQuestion();
-//
-//        Log.d(TAG, "Title: " + title);
-//        Log.d(TAG, "No. of items: " + numOfQuestion);
+        Quiz quiz = getIntent().getExtras().getParcelable("QUIZ");
+        String title = quiz.getTitle();
+        int numOfQuestion = quiz.getNumOfQuestion();
 
-        ArrayList<QuizQuestion> questions = getIntent().getExtras().getParcelableArrayList("Questions");
+        Log.d(TAG, "Title: " + title);
+        Log.d(TAG, "No. of items: " + numOfQuestion);
+        ArrayList<QuizQuestion> questions = quiz.getQuestions();
+
+//        ArrayList<QuizQuestion> questions = getIntent().getExtras().getParcelableArrayList("Questions");
         for (int i = 0; i < questions.size(); i++) {
             QuizQuestion question = questions.get(i);
             int questionId = question.getQuestionId();
