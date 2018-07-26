@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MotionEvent;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
@@ -56,6 +57,10 @@ public class QuizCreatorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz_creator);
         ButterKnife.bind(this);
 
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        testData();
         initData();
         initQuestionPreview();
         initListener();
@@ -119,6 +124,28 @@ public class QuizCreatorActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch ( item.getItemId() ){
+            case android.R.id.home:
+                onBackPressed();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
+
+    private void onAddClicked() {
+        String question = etQuestion.getText().toString();
+        String optionA = etOptionA.getText().toString();
+        String optionB = etOptionB.getText().toString();
+        String optionC = etOptionC.getText().toString();
+        String optionD = etOptionD.getText().toString();
+        int answer = Integer.parseInt(etCorrectAnswer.getText().toString());
+        int timeLimit = Integer.parseInt(etTimeLimit.getText().toString());
 
         if (requestCode == 1000 && resultCode == RESULT_OK) {
             if (data.getExtras() != null) {

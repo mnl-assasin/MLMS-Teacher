@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btnLesson:
                 break;
             case R.id.btnQuiz:
-
                 startActivity(new Intent(this, QuizActivity.class));
                 break;
             case R.id.btnRecords:

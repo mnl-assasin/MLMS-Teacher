@@ -3,6 +3,10 @@
     package="com.jru.mlmsteacher">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -27,7 +31,9 @@
         <activity android:name=".QuizPreviewActivity" />
         <activity android:name=".TestActivity" />
         <activity android:name=".Test2Activity" />
-        <activity android:name=".QuestionCreatorActivity"></activity>
+        <activity android:name=".QuestionCreatorActivity" />
+        <activity android:name=".util.AddLessonActivity" />
+        <activity android:name=".util.AttendanceActivity" android:label="Attendance"></activity>
     </application>
 
 </manifest>
