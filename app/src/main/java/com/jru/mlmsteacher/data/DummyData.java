@@ -17,7 +17,7 @@ public class DummyData {
         for (int i = 0; i < x; i++) {
             String title = "Quiz no. " + i;
             int numOfQuestions = random.nextInt(3) + 3;
-            quizzes.add(new Quiz(title, numOfQuestions, generateQuestions(numOfQuestions)));
+            quizzes.add(new Quiz(title, numOfQuestions, 0, generateQuestions(numOfQuestions)));
         }
         return quizzes;
     }
@@ -28,7 +28,7 @@ public class DummyData {
 
         String title = "Generated Quiz";
         int numOfQuestions = random.nextInt(3) + 3;
-        return new Quiz(title, numOfQuestions, generateQuestions(numOfQuestions));
+        return new Quiz(title, numOfQuestions, 0, generateQuestions(numOfQuestions));
     }
 
     private static ArrayList<QuizQuestion> generateQuestions(int numOfQuestion) {
@@ -80,7 +80,7 @@ public class DummyData {
                     "The correct answer is " + option[answerIndex];
 
             int timeLimit = random.nextInt(5) + 1;
-            questions.add(new QuizQuestion(i, question, optionA, optionB, optionC, optionD, answerIndex, timeLimit));
+            questions.add(new QuizQuestion(i, question, optionA, optionB, optionC, optionD, answerIndex));
         }
 
         return questions;

@@ -11,7 +11,7 @@ int pipe_stdout[2];
 int pipe_stderr[2];
 pthread_t thread_stdout;
 pthread_t thread_stderr;
-const char *ADBTAG = "Native_DapperWallet";
+const char *ADBTAG = "Native_MLMSTeacher";
 
 void *thread_stderr_func(void *) {
     ssize_t redirect_size;

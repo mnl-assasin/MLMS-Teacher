@@ -1,9 +1,8 @@
 package com.jru.mlmsteacher;
 
 import android.content.Intent;
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class SplashscreenActivity extends AppCompatActivity {
 
@@ -13,13 +12,13 @@ public class SplashscreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splashscreen);
 
 //        new NodeJSServer(this).run();
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-//                startActivity(new Intent(SplashscreenActivity.this, LoginActivity.class));
-                startActivity(new Intent(SplashscreenActivity.this, TestActivity.class));
-            }
-        }, 5000);
-
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                startActivity(new Intent(SplashscreenActivity.this, QuizActivity.class));
+////                startActivity(new Intent(SplashscreenActivity.this, TestActivity.class));
+//            }
+//        }, 5000);
+        startActivity(new Intent(SplashscreenActivity.this, QuizCreatorActivity.class));
     }
 }

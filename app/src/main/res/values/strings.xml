@@ -22,5 +22,20 @@
     <string name="click_restore">Restore</string>
     <string name="click_backup">Backup</string>
 
+    <string-array name="time_limit">
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <!--<item>Other</item>-->
+    </string-array>
+
+    <string-array name="options">
+        <item>Option A</item>
+        <item>Option B</item>
+        <item>Option C</item>
+        <item>Option D</item>
+    </string-array>
+
 
 </resources>

@@ -36,7 +36,6 @@ public class Test2Activity extends AppCompatActivity {
             String optionC = question.getOptionC();
             String optionD = question.getOptionD();
             int answer = question.getAnswer();
-            int timeLimit = question.getTimeLimit();
 
             Log.d(TAG, "Question Id: " + questionId);
             Log.d(TAG, "Question: " + quest);
@@ -45,8 +44,6 @@ public class Test2Activity extends AppCompatActivity {
             Log.d(TAG, "OptionC " + optionC);
             Log.d(TAG, "OptionD " + optionD);
             Log.d(TAG, "Answer " + answer);
-            Log.d(TAG, "Time Limit " + timeLimit);
-
 
         }
     }

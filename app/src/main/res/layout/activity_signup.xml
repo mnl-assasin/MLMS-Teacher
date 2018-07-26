@@ -102,7 +102,7 @@
         android:background="@color/sienna"
         android:text="@string/sign_up"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimaryText" />
+        android:textColor="@color/textColorPrimary" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -116,7 +116,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/have_account"
-            android:textColor="@color/colorPrimaryText"
+            android:textColor="@color/textColorPrimary"
             android:textStyle="bold" />
 
         <TextView

@@ -45,7 +45,7 @@ public class QuizQuestionAdapter extends RecyclerView.Adapter<QuizQuestionAdapte
 
         // TODO: Add codes in util for corresponding correct values;
         holder.tvCorrectAnswer.setText("Correct answer: " + question.getAnswer());
-        holder.tvTimeLimit.setText("Time limit: " + question.getTimeLimit());
+//        holder.tvTimeLimit.setText("Time limit: " + question.getTimeLimit());
 
     }
 
@@ -69,9 +69,6 @@ public class QuizQuestionAdapter extends RecyclerView.Adapter<QuizQuestionAdapte
         TextView tvOptionD;
         @BindView(R.id.tvCorrectAnswer)
         TextView tvCorrectAnswer;
-        @BindView(R.id.tvTimeLimit)
-        TextView tvTimeLimit;
-
         ViewHolder(View view) {
             super(view);
             ButterKnife.bind(this, view);

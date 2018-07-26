@@ -9,11 +9,13 @@ public class Quiz implements Parcelable{
 
     private String title;
     private int numOfQuestion;
+    private int timeLimit;
     public ArrayList<QuizQuestion> questions;
 
-    public Quiz(String title, int numOfQuestion, ArrayList<QuizQuestion> questions) {
+    public Quiz(String title, int numOfQuestion, int timeLimit, ArrayList<QuizQuestion> questions) {
         this.title = title;
         this.numOfQuestion = numOfQuestion;
+        this.timeLimit = timeLimit;
         this.questions = questions;
     }
 
@@ -56,6 +58,7 @@ public class Quiz implements Parcelable{
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(title);
         dest.writeInt(numOfQuestion);
+        dest.writeInt(timeLimit);
         dest.writeTypedList(questions);
     }
 }

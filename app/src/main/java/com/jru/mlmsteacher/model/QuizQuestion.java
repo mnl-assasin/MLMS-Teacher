@@ -12,10 +12,9 @@ public class QuizQuestion implements Parcelable {
     private String optionC;
     private String optionD;
     private int answer;
-    private int timeLimit; // in seconds
 
     public QuizQuestion(int questionId, String question, String optionA, String optionB,
-                        String optionC, String optionD, int answer, int timeLimit) {
+                        String optionC, String optionD, int answer) {
         this.questionId = questionId;
         this.question = question;
         this.optionA = optionA;
@@ -23,7 +22,6 @@ public class QuizQuestion implements Parcelable {
         this.optionC = optionC;
         this.optionD = optionD;
         this.answer = answer;
-        this.timeLimit = timeLimit;
     }
 
     protected QuizQuestion(Parcel in) {
@@ -34,7 +32,6 @@ public class QuizQuestion implements Parcelable {
         optionC = in.readString();
         optionD = in.readString();
         answer = in.readInt();
-        timeLimit = in.readInt();
     }
 
     public static final Creator<QuizQuestion> CREATOR = new Creator<QuizQuestion>() {
@@ -77,10 +74,6 @@ public class QuizQuestion implements Parcelable {
         return answer;
     }
 
-    public int getTimeLimit() {
-        return timeLimit;
-    }
-
     @Override
     public int describeContents() {
         return 0;
@@ -95,6 +88,5 @@ public class QuizQuestion implements Parcelable {
         dest.writeString(optionC);
         dest.writeString(optionD);
         dest.writeInt(answer);
-        dest.writeInt(timeLimit);
     }
 }

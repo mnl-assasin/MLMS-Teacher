@@ -2,20 +2,24 @@ package com.jru.mlmsteacher;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
 
+import com.jru.mlmsteacher.adapter.ACTAdapter;
+import com.jru.mlmsteacher.adapter.QuizQuestionAdapter;
 import com.jru.mlmsteacher.data.Keys;
-import com.jru.mlmsteacher.model.Quiz;
 import com.jru.mlmsteacher.model.QuizQuestion;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import butterknife.BindView;
@@ -27,39 +31,11 @@ public class QuizCreatorActivity extends AppCompatActivity {
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.etTitle)
-    TextInputEditText etTitle;
-    @BindView(R.id.tilTitle)
-    TextInputLayout tilTitle;
-    @BindView(R.id.tvItems)
-    TextView tvItems;
-    @BindView(R.id.etQuestion)
-    TextInputEditText etQuestion;
-    @BindView(R.id.tilQuestion)
-    TextInputLayout tilQuestion;
-    @BindView(R.id.etOptionA)
-    TextInputEditText etOptionA;
-    @BindView(R.id.tilOptionA)
-    TextInputLayout tilOptionA;
-    @BindView(R.id.etOptionB)
-    TextInputEditText etOptionB;
-    @BindView(R.id.tilOptionB)
-    TextInputLayout tilOptionB;
-    @BindView(R.id.etOptionC)
-    TextInputEditText etOptionC;
-    @BindView(R.id.tilOptionC)
-    TextInputLayout tilOptionC;
-    @BindView(R.id.etOptionD)
-    TextInputEditText etOptionD;
-    @BindView(R.id.tilOptionD)
-    TextInputLayout tilOptionD;
-    @BindView(R.id.etCorrectAnswer)
-    TextInputEditText etCorrectAnswer;
-    @BindView(R.id.tilCorrectAnswer)
-    TextInputLayout tilCorrectAnswer;
-    @BindView(R.id.etTimeLimit)
-    TextInputEditText etTimeLimit;
-    @BindView(R.id.tilTimeLimit)
-    TextInputLayout tilTimeLimit;
+    EditText etTitle;
+    @BindView(R.id.actTimeLimit)
+    AutoCompleteTextView actTimeLimit;
+    @BindView(R.id.rv)
+    RecyclerView rv;
     @BindView(R.id.btnAdd)
     Button btnAdd;
     @BindView(R.id.btnPreview)
@@ -67,10 +43,12 @@ public class QuizCreatorActivity extends AppCompatActivity {
     @BindView(R.id.btnGenerate)
     Button btnGenerate;
 
-    Quiz quiz;
-    List<QuizQuestion> questions;
+    QuizQuestionAdapter adapter;
 
-    int questionIndex;
+    ArrayList<QuizQuestion> questions;
+    List<String> timeLimitList;
+    int timeLimit = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,41 +56,59 @@ public class QuizCreatorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz_creator);
         ButterKnife.bind(this);
 
-        testData();
         initData();
+        initQuestionPreview();
         initListener();
-    }
-
-    private void testData() {
-
-        etQuestion.setText("Question " + questionIndex + 1);
-        etOptionA.setText("OptionA for question: " + questionIndex + 1);
-        etOptionB.setText("OptionB for question: " + questionIndex + 1);
-        etOptionC.setText("OptionC for question: " + questionIndex + 1);
-        etOptionD.setText("OptionD for question: " + questionIndex + 1);
-        etCorrectAnswer.setText("1");
-        etTimeLimit.setText("1000");
-
 
     }
 
     private void initData() {
 
+        timeLimitList = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.time_limit)));
+        ACTAdapter adapter = new ACTAdapter(this, R.layout.item_act, timeLimitList);
+        actTimeLimit.setAdapter(adapter);
+
+    }
+
+
+    private void initQuestionPreview() {
 
         questions = new ArrayList<>();
-        questionIndex = 0;
+        adapter = new QuizQuestionAdapter(questions);
+        rv.setLayoutManager(new LinearLayoutManager(this));
+        rv.setAdapter(adapter);
 
+    }
+
+    private void initListener() {
+
+        actTimeLimit.setKeyListener(null);
+        actTimeLimit.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // TODO: Add custom timeLimit;
+                timeLimit = (position + 1) * 5;
+            }
+        });
+
+        actTimeLimit.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                ((AutoCompleteTextView) v).showDropDown();
+                return false;
+            }
+        });
     }
 
     @OnClick({R.id.btnAdd, R.id.btnPreview, R.id.btnGenerate})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btnAdd:
-                onAddClicked();
+                startActivityForResult(new Intent(this, QuestionCreatorActivity.class).putExtra("id", questions.size()), 1000);
                 break;
             case R.id.btnPreview:
                 Bundle extras = new Bundle();
-                extras.putParcelableArrayList(Keys.QUIZ_QUESTIONS, (ArrayList<? extends Parcelable>) questions);
+                extras.putParcelableArrayList(Keys.QUIZ_QUESTIONS, questions);
                 startActivity(new Intent(this, QuizPreviewActivity.class).putExtras(extras));
                 break;
             case R.id.btnGenerate:
@@ -120,48 +116,17 @@ public class QuizCreatorActivity extends AppCompatActivity {
         }
     }
 
-    private void onAddClicked() {
-        String question = etQuestion.getText().toString();
-        String optionA = etOptionA.getText().toString();
-        String optionB = etOptionB.getText().toString();
-        String optionC = etOptionC.getText().toString();
-        String optionD = etOptionD.getText().toString();
-        int answer = Integer.parseInt(etCorrectAnswer.getText().toString());
-        int timeLimit = Integer.parseInt(etTimeLimit.getText().toString());
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
 
-        // TODO: Add validation
-
-        questions.add(new QuizQuestion(questionIndex, question, optionA, optionB, optionC, optionD, answer, timeLimit));
-
-
-        updateUI();
-
-
-    }
-
-    private void updateUI() {
-
-//        // TODO: uncomment re-initilization of values;
-//        etQuestion.setText("");
-//        etOptionA.setText("");
-//        etOptionB.setText("");
-//        etOptionC.setText("");
-//        etOptionD.setText("");
-//
-//        // TODO: I know this will change to AutoCompleteTextView;
-//        etCorrectAnswer.setText("");
-//        etTimeLimit.setText("");
-
-        testData();
-        questionIndex++;
-        tvItems.setText(String.valueOf(questionIndex));
-
-
-    }
-
-    private void initListener() {
-
-        // TODO: Add function for textInputLayouts;
-
+        if (requestCode == 1000 && resultCode == RESULT_OK) {
+            if (data.getExtras() != null) {
+                QuizQuestion question = data.getParcelableExtra("Question");
+                // TODO : Check if ID exist;
+                questions.add(question);
+                adapter.notifyDataSetChanged();
+            }
+        }
     }
 }
