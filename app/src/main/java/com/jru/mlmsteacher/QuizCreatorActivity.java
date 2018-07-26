@@ -60,7 +60,6 @@ public class QuizCreatorActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        testData();
         initData();
         initQuestionPreview();
         initListener();
@@ -124,6 +123,9 @@ public class QuizCreatorActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch ( item.getItemId() ){
@@ -136,24 +138,5 @@ public class QuizCreatorActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         finish();
-    }
-
-    private void onAddClicked() {
-        String question = etQuestion.getText().toString();
-        String optionA = etOptionA.getText().toString();
-        String optionB = etOptionB.getText().toString();
-        String optionC = etOptionC.getText().toString();
-        String optionD = etOptionD.getText().toString();
-        int answer = Integer.parseInt(etCorrectAnswer.getText().toString());
-        int timeLimit = Integer.parseInt(etTimeLimit.getText().toString());
-
-        if (requestCode == 1000 && resultCode == RESULT_OK) {
-            if (data.getExtras() != null) {
-                QuizQuestion question = data.getParcelableExtra("Question");
-                // TODO : Check if ID exist;
-                questions.add(question);
-                adapter.notifyDataSetChanged();
-            }
-        }
     }
 }
