@@ -20,10 +20,6 @@ public class LoginActivity extends AppCompatActivity {
     TextInputEditText etUsername;
     @BindView(R.id.tilUsername)
     TextInputLayout tilUsername;
-    @BindView(R.id.etBirthday)
-    TextInputEditText etBirthday;
-    @BindView(R.id.tilBirthday)
-    TextInputLayout tilBirthday;
     @BindView(R.id.etPassword)
     TextInputEditText etPassword;
     @BindView(R.id.tilPassword)

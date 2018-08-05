@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.jru.mlmsteacher.util.AttendanceActivity;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -32,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btnAttendance:
+                startActivity(new Intent(this, AttendanceActivity.class));
                 break;
             case R.id.btnLesson:
                 break;
             case R.id.btnQuiz:
-
                 startActivity(new Intent(this, QuizActivity.class));
                 break;
             case R.id.btnRecords:

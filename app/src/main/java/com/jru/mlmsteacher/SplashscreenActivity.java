@@ -47,6 +47,10 @@ public class SplashscreenActivity extends AppCompatActivity {
 ////                startActivity(new Intent(SplashscreenActivity.this, TestActivity.class));
 //            }
 //        }, 5000);
+<<<<<<< HEAD
 //        startActivity(new Intent(SplashscreenActivity.this, QuizCreatorActivity.class));
+=======
+        startActivity(new Intent(SplashscreenActivity.this, LoginActivity.class));
+>>>>>>> master-forked
     }
 }
