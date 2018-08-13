@@ -4,17 +4,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.jru.mlmsteacher.api.calls.Login;
+import com.jru.mlmsteacher.api.calls.PersonalDetails;
+import com.jru.mlmsteacher.api.response.LoginResponse;
+import com.jru.mlmsteacher.api.response.PersonalDetailsResponse;
+import com.jru.mlmsteacher.components.BaseActivity;
+import com.jru.mlmsteacher.data.EZSharedPreferences;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends BaseActivity {
 
     @BindView(R.id.etUsername)
     TextInputEditText etUsername;
@@ -42,10 +50,91 @@ public class LoginActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btnSignIn:
-                startActivity(new Intent(this, MainActivity.class));
+
+                onSignInClicked();
                 break;
             case R.id.tvSignup:
                 break;
         }
+    }
+
+    private void onSignInClicked() {
+
+        String username = etUsername.getText().toString();
+        String password = etPassword.getText().toString();
+
+        Login.request(username, password, new Login.RequestListener() {
+            @Override
+            public void isSuccessful(LoginResponse response) {
+                Log.d("TAG_", response.toString());
+                loginSuccessful(response);
+            }
+
+            @Override
+            public void onFailure(String errorMessage) {
+                Log.d("TAG_", "onFailure: " + errorMessage);
+            }
+
+            @Override
+            public void showLoadingDialog() {
+                // TODO: showLoadingDialog;
+                showProgressDialog("Logging in...");
+                Log.d("TAG_", "showLoadingDialog");
+            }
+
+            @Override
+            public void hideLoadingDialog() {
+                // TODO: hideLoadingDialog;
+                hideProgressDialog();
+                Log.d("TAG_", "hideLoadingDialog");
+            }
+        });
+    }
+
+    private void loginSuccessful(LoginResponse response) {
+        String accessToken = "Bearer " + response.getAccessToken();
+        EZSharedPreferences.setAccessToken(this, accessToken);
+
+        PersonalDetails.request(accessToken, new PersonalDetails.RequestListener() {
+            @Override
+            public void isSuccessful(PersonalDetailsResponse response) {
+                Log.d("TAG_", response.toString());
+                getPersonalDetails(response);
+            }
+
+            @Override
+            public void onFailure(String errorMessage) {
+                Log.d("TAG_", "onFailure: " + errorMessage);
+            }
+
+            @Override
+            public void showLoadingDialog() {
+                // TODO: showLoadingDialog;
+                showProgressDialog("Getting user info...");
+                Log.d("TAG_", "showLoadingDialog");
+            }
+
+            @Override
+            public void hideLoadingDialog() {
+                // TODO: hideLoadingDialog;
+                hideProgressDialog();
+                Log.d("TAG_", "hideLoadingDialog");
+            }
+
+        });
+
+    }
+
+    private void getPersonalDetails(PersonalDetailsResponse response) {
+
+        String userType = response.getUserType();
+
+        if (!userType.equals("teacher"))
+            Toast.makeText(this, "ACCESS DENIED THIS IS APP IS FOR TEACHERS ONLY", Toast.LENGTH_LONG).show();
+        else {
+            EZSharedPreferences.setPersonalDetails(this, response);
+            startActivity(new Intent(this, MainActivity.class));
+        }
+
     }
 }

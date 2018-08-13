@@ -3,14 +3,12 @@
     package="com.jru.mlmsteacher">
 
     <uses-permission android:name="android.permission.INTERNET" />
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-=======
+
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
->>>>>>> master-forked
 
     <application
         android:allowBackup="true"
@@ -29,15 +27,15 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".LessonActivity" />
-        <activity android:name=".QuizActivity" />
-        <activity android:name=".QuizCreatorActivity" />
-        <activity android:name=".QuizPreviewActivity" />
+        <activity android:name=".components.lesson.LessonActivity" />
+        <activity android:name=".components.quiz.QuizActivity" />
+        <activity android:name=".components.quiz.QuizCreatorActivity" />
+        <activity android:name=".components.quiz.QuizPreviewActivity" />
         <activity android:name=".TestActivity" />
         <activity android:name=".Test2Activity" />
-        <activity android:name=".QuestionCreatorActivity" />
-        <activity android:name=".util.AddLessonActivity" />
-        <activity android:name=".util.AttendanceActivity" android:label="Attendance"></activity>
+        <activity android:name=".components.quiz.QuestionCreatorActivity" />
+        <activity android:name=".components.lesson.AddLessonActivity" />
+        <activity android:name=".components.attendance.AttendanceActivity" android:label="Attendance"></activity>
     </application>
 
 </manifest>

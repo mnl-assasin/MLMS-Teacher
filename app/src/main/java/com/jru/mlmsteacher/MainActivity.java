@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.jru.mlmsteacher.util.AttendanceActivity;
+import com.jru.mlmsteacher.components.attendance.AttendanceActivity;
+import com.jru.mlmsteacher.components.quiz.QuizActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

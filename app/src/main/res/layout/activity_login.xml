@@ -16,7 +16,8 @@
         android:layout_marginBottom="32dp"
         android:layout_marginTop="32dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/logo_jru_small" />
+        android:src="@drawable/logo_jru_small"
+        android:visibility="invisible" />
 
 
     <LinearLayout
@@ -35,40 +36,32 @@
             android:id="@+id/tilUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp">
+            android:layout_marginBottom="4dp"
+            android:textColorHint="@color/textColorWhite">
 
             <android.support.design.widget.TextInputEditText
                 android:id="@+id/etUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/username" />
+                android:hint="@string/username"
+                android:textColor="@color/textColorWhite"
+                android:textColorHint="@color/textColorWhite" />
 
         </android.support.design.widget.TextInputLayout>
-
-        <!--<android.support.design.widget.TextInputLayout-->
-            <!--android:id="@+id/tilBirthday"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginBottom="4dp">-->
-
-            <!--<android.support.design.widget.TextInputEditText-->
-                <!--android:id="@+id/etBirthday"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:hint="@string/birthday" />-->
-
-        <!--</android.support.design.widget.TextInputLayout>-->
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/tilPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/textColorWhite">
 
             <android.support.design.widget.TextInputEditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/password" />
+                android:hint="@string/password"
+                android:textColor="@color/textColorWhite"
+                android:textColorHint="@color/textColorWhite" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -82,7 +75,8 @@
         android:layout_centerHorizontal="true"
         android:background="@color/sienna"
         android:text="@string/sign_in"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textColor="@color/textColorWhite" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -96,6 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no_account"
+            android:textColor="@color/textColorWhite"
             android:textStyle="bold" />
 
         <TextView

@@ -1,56 +1,57 @@
 package com.jru.mlmsteacher;
 
-import android.Manifest;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.EditText;
 
-import com.karumi.dexter.Dexter;
-import com.karumi.dexter.PermissionToken;
-import com.karumi.dexter.listener.PermissionDeniedResponse;
-import com.karumi.dexter.listener.PermissionGrantedResponse;
-import com.karumi.dexter.listener.PermissionRequest;
-import com.karumi.dexter.listener.single.PermissionListener;
+import com.jru.mlmsteacher.api.ApiConfig;
+import com.jru.mlmsteacher.data.EZSharedPreferences;
 
 public class SplashscreenActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
 
-        Dexter.withActivity(this).withPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                .withListener(new PermissionListener() {
-                    @Override
-                    public void onPermissionGranted(PermissionGrantedResponse response) {
-                        new NodeJSServer(SplashscreenActivity.this).run();
-                        startActivity(new Intent(SplashscreenActivity.this, QuizCreatorActivity.class));
-                        SplashscreenActivity.this.finish();
-                    }
+//        startActivity(new Intent(this, QuizCreatorActivity.class));
+//        finish();
+        configAPI();
+    }
 
-                    @Override
-                    public void onPermissionDenied(PermissionDeniedResponse response) {
+    private void configAPI() {
 
-                    }
+        final String appSecret = "I4IUb07pyO3HCui6UEXfA2kZTI7l4uPKOunSdYri";
 
-                    @Override
-                    public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
+        final EditText editText = new EditText(this);
+//        editText.setText("http://");
+        editText.setText("https://2ee640b0.ngrok.io/");
+        editText.setTextColor(getResources().getColor(R.color.textColor));
 
-                    }
-                }).check();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Enter server address");
+        builder.setView(editText);
+        builder.setCancelable(false);
+        builder.setPositiveButton("Proceed", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                String baseURL = editText.getText().toString();
+                ApiConfig.setConfig(baseURL, appSecret);
 
-//        new NodeJSServer(this).run();
-//        new Handler().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                startActivity(new Intent(SplashscreenActivity.this, QuizActivity.class));
-////                startActivity(new Intent(SplashscreenActivity.this, TestActivity.class));
-//            }
-//        }, 5000);
-<<<<<<< HEAD
-//        startActivity(new Intent(SplashscreenActivity.this, QuizCreatorActivity.class));
-=======
-        startActivity(new Intent(SplashscreenActivity.this, LoginActivity.class));
->>>>>>> master-forked
+//                startActivity(new Intent(getApplicationContext(), TestActivity.class));
+
+                if (EZSharedPreferences.isLogin(SplashscreenActivity.this))
+                    startActivity(new Intent(SplashscreenActivity.this, MainActivity.class));
+                else
+                    startActivity(new Intent(SplashscreenActivity.this, LoginActivity.class));
+
+                finish();
+            }
+        }).show();
+
     }
 }

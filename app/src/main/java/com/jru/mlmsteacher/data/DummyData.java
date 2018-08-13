@@ -15,7 +15,7 @@ public class DummyData {
         Random random = new Random();
         int x = random.nextInt(3) + 1;
         for (int i = 0; i < x; i++) {
-            String title = "Quiz no. " + i;
+            String title = "QuizPreviewItem no. " + i;
             int numOfQuestions = random.nextInt(3) + 3;
             quizzes.add(new Quiz(title, numOfQuestions, 0, generateQuestions(numOfQuestions)));
         }
@@ -26,7 +26,7 @@ public class DummyData {
 
         Random random = new Random();
 
-        String title = "Generated Quiz";
+        String title = "Generated QuizPreviewItem";
         int numOfQuestions = random.nextInt(3) + 3;
         return new Quiz(title, numOfQuestions, 0, generateQuestions(numOfQuestions));
     }
