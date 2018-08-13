@@ -2,6 +2,8 @@ package com.jru.mlmsteacher.api.calls;
 
 import com.jru.mlmsteacher.api.response.PersonalDetailsResponse;
 
+import java.io.IOException;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -17,8 +19,13 @@ public class PersonalDetails extends BaseRequest {
                 listener.hideLoadingDialog();
                 if (response.isSuccessful())
                     listener.isSuccessful(response.body());
-                else
-                    listener.onFailure(response.errorBody().toString());
+                else {
+                    try {
+                        listener.onFailure(response.errorBody().string());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
 
             @Override

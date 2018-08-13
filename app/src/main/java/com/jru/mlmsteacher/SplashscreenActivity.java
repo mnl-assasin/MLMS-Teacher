@@ -29,7 +29,7 @@ public class SplashscreenActivity extends AppCompatActivity {
 
         final EditText editText = new EditText(this);
 //        editText.setText("http://");
-        editText.setText("https://2ee640b0.ngrok.io/");
+        editText.setText("http://fa9bf678.ngrok.io/");
         editText.setTextColor(getResources().getColor(R.color.textColor));
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

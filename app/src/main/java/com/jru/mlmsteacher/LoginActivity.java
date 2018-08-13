@@ -50,10 +50,11 @@ public class LoginActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btnSignIn:
-
                 onSignInClicked();
                 break;
             case R.id.tvSignup:
+                startActivity(new Intent(this, SignupActivity.class));
+                finish();
                 break;
         }
     }
@@ -73,6 +74,7 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onFailure(String errorMessage) {
                 Log.d("TAG_", "onFailure: " + errorMessage);
+                Toast.makeText(LoginActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -128,12 +130,13 @@ public class LoginActivity extends BaseActivity {
     private void getPersonalDetails(PersonalDetailsResponse response) {
 
         String userType = response.getUserType();
-
+        Log.d("TAG_", "userType: " + userType);
         if (!userType.equals("teacher"))
             Toast.makeText(this, "ACCESS DENIED THIS IS APP IS FOR TEACHERS ONLY", Toast.LENGTH_LONG).show();
         else {
             EZSharedPreferences.setPersonalDetails(this, response);
             startActivity(new Intent(this, MainActivity.class));
+            finish();
         }
 
     }

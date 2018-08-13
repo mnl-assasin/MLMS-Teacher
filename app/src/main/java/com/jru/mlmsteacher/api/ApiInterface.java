@@ -2,6 +2,7 @@ package com.jru.mlmsteacher.api;
 
 import com.jru.mlmsteacher.api.request.LoginRequest;
 import com.jru.mlmsteacher.api.request.QuizCreatorRequest;
+import com.jru.mlmsteacher.api.request.SignUpRequest;
 import com.jru.mlmsteacher.api.response.LoginResponse;
 import com.jru.mlmsteacher.api.response.PersonalDetailsResponse;
 import com.jru.mlmsteacher.api.response.QuizCreatorResponse;
@@ -14,15 +15,18 @@ import retrofit2.http.POST;
 
 public interface ApiInterface {
 
-    @POST("/oauth/token")
+    @POST("oauth/token")
     Call<LoginResponse> login(@Body LoginRequest request);
+
+    @POST("api/register")
+    Call<Void> signup(@Body SignUpRequest request);
 
     @GET("api/me")
     Call<PersonalDetailsResponse> personalDetails();
 
-    @POST("/api/teacher/quizzes")
+    @POST("api/teacher/quizzes")
     Call<QuizCreatorResponse> createQuiz(@Body QuizCreatorRequest request);
 
-    @GET("/api/teacher/quizzes")
+    @GET("api/teacher/quizzes")
     Call<QuizPreviewResponse> quizPreview();
 }
